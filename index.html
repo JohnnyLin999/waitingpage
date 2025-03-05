@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>綜合範例：Coursera-like + 熱門展覽</title>
+    <title>Coursera-like</title>
     <!-- 載入外部 CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- 可選：載入 Google Fonts 或其他字體 -->
+    <!-- 載入 Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +22,7 @@
     </div>
     <nav class="navbar-menu">
         <ul>
-            <li><a href="#">Explore</a></li>
+            <li><a href="#">Explore More</a></li>
             <li><a href="#">Online Degrees</a></li>
             <li><a href="#">Careers</a></li>
         </ul>
@@ -36,72 +36,58 @@
 <!-- 主視覺區（Hero Section） -->
 <section class="man">
     <div class="man-text">
-        <h1>Website Maintenance</h1>
+        <h1>Your Class Is Almost Ready!</h1>
         <p>
-            Please give us a moment.<br>
-            Sorry for the inconvenience.<br>
+            Please give us one more second!<br><br>
+            Been Waiting for a While?<br>
         </p>
         <div class="man-cta">
-            <button class="btn btn-primary" id="freeTrialBtn">Press to Get Voucher</button>
+            <button class="btn btn-primary" id="freeTrialBtn">Refresh the Page</button>
         </div>
     </div>
-    <div class="man-image">
-        <img
-                src="man.png"
-                alt="man Image"
-        >
-    </div>
-</section>
-
-
-
-<!-- 熱門展覽區 -->
-<section class="exhibition-section">
-    <h2 class="exhibition-title">熱門課程</h2>
-    <div class="exhibition-container">
-        <!-- 卡片 1 -->
-        <article class="exhibition-card">
-            <img
-                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+1"
-                    alt="展覽圖 1"
-                    class="exhibition-image"
-            />
-            <h3 class="exhibition-name">123</h3>
-            <p class="exhibition-date">2021-12-24</p>
-        </article>
-
-        <!-- 卡片 2 -->
-        <article class="exhibition-card">
-            <img
-                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+2"
-                    alt="展覽圖 2"
-                    class="exhibition-image"
-            />
-            <h3 class="exhibition-name">123</h3>
-            <p class="exhibition-date">2023-09-28</p>
-        </article>
-
-        <!-- 卡片 3 -->
-        <article class="exhibition-card">
-            <img
-                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+3"
-                    alt="展覽圖 3"
-                    class="exhibition-image"
-            />
-            <h3 class="exhibition-name">123</h3>
-            <p class="exhibition-date">2024-05-17 ~ 2024-08-02</p>
-        </article>
-
-        <!-- 卡片 4 -->
-        <article class="exhibition-card">
-            <img
-                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+4"
-                    alt="展覽圖 4"
-                    class="exhibition-image"
-            />
-            <h3 class="exhibition-name">祝英台：古今文化攻略</h3>
-            <p class="exhibition-date">2023-12-01 ~ 2024-01-31</p>
-        </article>
+    <!-- 將原本的圖片區替換成展覽輪播 -->
+    <div class="exhibition-section in-hero">
+        <h2 class="exhibition-title">Popular Certificates</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- 卡片 1 -->
+                <article class="exhibition-card">
+                    <img src="Google.png" alt="展圖1" class="exhibition-image">
+                    <h3 class="exhibition-name">Google Data Analytics</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+                <!-- 卡片 2 -->
+                <article class="exhibition-card">
+                    <img src="Google_IT.png" alt="展圖2" class="exhibition-image">
+                    <h3 class="exhibition-name">Google IT Support</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+                <!-- 卡片 3 -->
+                <article class="exhibition-card">
+                    <img src="Data_Science_Foundation.png" alt="展圖3" class="exhibition-image">
+                    <h3 class="exhibition-name">Data Science Foundations</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+                <!-- 卡片 4 -->
+                <article class="exhibition-card">
+                    <img src="IBM_Data.png" alt="展圖4" class="exhibition-image">
+                    <h3 class="exhibition-name">IBM Data Science</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+                <!-- 卡片 5 -->
+                <article class="exhibition-card">
+                    <img src="Google_PM.png" alt="展圖5" class="exhibition-image">
+                    <h3 class="exhibition-name">Google Project Management</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+                <!-- 卡片 6 -->
+                <article class="exhibition-card">
+                    <img src="IBM_Data_C.png" alt="展圖6" class="exhibition-image">
+                    <h3 class="exhibition-name">Introduction to Data Science</h3>
+                    <button class="btn btn-primary">Learn More</button>
+                </article>
+            </div>
+        </div>
     </div>
 </section>
 

@@ -11,7 +11,7 @@ body {
     background-color: #fff;
 }
 
-/* 導覽列（Navbar） */
+/* 導覽列 */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,11 +21,8 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.navbar-logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #0056D2;
+.navbar-logo img {
+    max-height: 40px;
 }
 
 .navbar-menu ul {
@@ -54,7 +51,7 @@ body {
     border-radius: 4px;
 }
 
-.btn-signin {
+.btn-login {
     background-color: transparent;
     color: #0056D2;
     font-weight: 500;
@@ -67,35 +64,22 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #f1f6fd;
+    background-color: #0041a8;
 }
 
-.btn-login {
-    background-color: transparent;
-    color: #0056D2; /* Blue text color */
-    font-weight: 500;
-}
-
-.btn-primary {
-    background-color: transparent; /* No background color */
-    color: #0056D2; /* Blue text color */
-    border: 2px solid #0056D2; /* Blue border */
-    font-weight: 500;
-}
-
-/* 主視覺區 */
+/* 主視覺區 (Hero) */
 .man {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-color: #eef4fd;
+    background-color: #F6F8FA;
 }
 
 .man-text {
+    flex: 1;
     max-width: 600px;
-    margin-right: 2rem;
 }
 
 .man-text h1 {
@@ -111,24 +95,68 @@ body {
 }
 
 .man-cta {
+    margin-top: 1rem;
+}
+
+/* 移除原本的圖片區 */
+.man-image {
+    display: none;
+}
+
+/* Hero 區內的新展覽區 */
+.man .exhibition-section.in-hero {
+    width: 320px; /* 與輪播卡片寬度一致 */
+    margin: 0 auto;
+}
+
+.man .exhibition-section.in-hero .exhibition-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 輪播容器 */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    transition: transform 0.5s ease-in-out;
 }
 
-.man-cta .subtext {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-.man-image img {
-    width: 300px;
-    height: auto;
+/* 展覽卡片 */
+.exhibition-card {
+    flex: 0 0 320px; /* 固定寬度 */
+    background-color: #fafafa;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    margin-right: 0.5rem;
 }
 
-/* 合作夥伴 / 大學標誌區 */
+.exhibition-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.exhibition-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.exhibition-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    padding: 0 1rem;
+}
+
+/* 合作夥伴區 */
 .partners {
     text-align: center;
     padding: 2rem 1rem;
@@ -153,68 +181,6 @@ body {
     transition: filter 0.3s;
 }
 
-.logo-item img:hover {
-    filter: none;
-}
-
-/* 熱門展覽區 */
-.exhibition-section {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    text-align: center;
-    background-color: #fff;
-}
-
-.exhibition-title {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-.exhibition-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.exhibition-card {
-    flex: 1 1 240px;
-    max-width: 300px;
-    background-color: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition: box-shadow 0.3s ease;
-}
-
-.exhibition-card:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.exhibition-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.exhibition-name {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin: 1rem 0 0.5rem;
-    padding: 0 1rem;
-}
-
-.exhibition-date {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
 /* 頁尾 */
 .footer {
     background-color: #F6F8FA;
@@ -226,9 +192,4 @@ body {
     margin: 0.5rem 0;
     color: #666;
     font-size: 0.9rem;
-}
-
-.small-logo {
-    width: 108px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
 }
