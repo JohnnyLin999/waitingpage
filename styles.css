@@ -1,0 +1,234 @@
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* 導覽列（Navbar） */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0056D2;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* 按鈕樣式 */
+.btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.btn-signin {
+    background-color: transparent;
+    color: #0056D2;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0056D2;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #f1f6fd;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #0056D2; /* Blue text color */
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: transparent; /* No background color */
+    color: #0056D2; /* Blue text color */
+    border: 2px solid #0056D2; /* Blue border */
+    font-weight: 500;
+}
+
+/* 主視覺區 */
+.man {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #eef4fd;
+}
+
+.man-text {
+    max-width: 600px;
+    margin-right: 2rem;
+}
+
+.man-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.man-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.man-cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.man-cta .subtext {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.man-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 合作夥伴 / 大學標誌區 */
+.partners {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+.partners h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.logo-item img {
+    max-width: 120px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.logo-item img:hover {
+    filter: none;
+}
+
+/* 熱門展覽區 */
+.exhibition-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.exhibition-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.exhibition-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.exhibition-card {
+    flex: 1 1 240px;
+    max-width: 300px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.exhibition-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.exhibition-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.exhibition-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem;
+    padding: 0 1rem;
+}
+
+.exhibition-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* 頁尾 */
+.footer {
+    background-color: #F6F8FA;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.small-logo {
+    width: 108px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}

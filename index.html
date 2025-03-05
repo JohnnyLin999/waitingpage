@@ -1,40 +1,147 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WS playground</title>
-    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>綜合範例：Coursera-like + 熱門展覽</title>
+    <!-- 載入外部 CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 可選：載入 Google Fonts 或其他字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+            rel="stylesheet"
+    >
 </head>
 <body>
-<header class="logo">
-    <a href="https://www.jetbrains.com/webstorm/">
-        <img src="/webstorm-logo.svg" alt="WebStorm logo" width="344"
-             height="90">
-    </a>
+<!-- 導覽列 -->
+<header class="navbar">
+    <div class="navbar-logo">
+        <img src="Coursera_logo.png" alt="Coursera Logo" class="small-logo">
+    </div>
+    <nav class="navbar-menu">
+        <ul>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Online Degrees</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-actions">
+        <button class="btn btn-login">Log In</button>
+        <button class="btn btn-primary">Join for Free</button>
+    </div>
 </header>
-<main id="app">
-    <h1 class="title">
-        Thank you for trying it out. <br /> Your first project is up and running
-        now.
-    </h1>
-    <section class="counter">
-        <div class="counter-info">
-            <p class="counter-text">Counter is</p>
-            <p class="counter-value" id="counter-value"></p>
+
+<!-- 主視覺區（Hero Section） -->
+<section class="man">
+    <div class="man-text">
+        <h1>Website Maintenance</h1>
+        <p>
+            Please give us a moment.<br>
+            Sorry for the inconvenience.<br>
+        </p>
+        <div class="man-cta">
+            <button class="btn btn-primary" id="freeTrialBtn">Press to Get Voucher</button>
         </div>
-        <div class="counter-interaction">
-            <button id="increaseByOne" type="button">+1</button>
-            <button id="increaseByTwo" type="button">+2</button>
-            <button id="decreaseByOne" type="button">-1</button>
-            <button id="decreaseByTwo" type="button">-2</button>
+    </div>
+    <div class="man-image">
+        <img
+                src="man.png"
+                alt="man Image"
+        >
+    </div>
+</section>
+
+
+
+<!-- 熱門展覽區 -->
+<section class="exhibition-section">
+    <h2 class="exhibition-title">熱門展覽</h2>
+    <div class="exhibition-container">
+        <!-- 卡片 1 -->
+        <article class="exhibition-card">
+            <img
+                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+1"
+                    alt="展覽圖 1"
+                    class="exhibition-image"
+            />
+            <h3 class="exhibition-name">華麗魔法屋：故宮的洛可可珍寶</h3>
+            <p class="exhibition-date">2021-12-24</p>
+        </article>
+
+        <!-- 卡片 2 -->
+        <article class="exhibition-card">
+            <img
+                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+2"
+                    alt="展覽圖 2"
+                    class="exhibition-image"
+            />
+            <h3 class="exhibition-name">愛現故宮特展</h3>
+            <p class="exhibition-date">2023-09-28</p>
+        </article>
+
+        <!-- 卡片 3 -->
+        <article class="exhibition-card">
+            <img
+                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+3"
+                    alt="展覽圖 3"
+                    class="exhibition-image"
+            />
+            <h3 class="exhibition-name">看得見的紅樓夢</h3>
+            <p class="exhibition-date">2024-05-17 ~ 2024-08-02</p>
+        </article>
+
+        <!-- 卡片 4 -->
+        <article class="exhibition-card">
+            <img
+                    src="https://via.placeholder.com/300x200.png?text=%E5%B1%95%E8%A6%BD%E5%9C%96+4"
+                    alt="展覽圖 4"
+                    class="exhibition-image"
+            />
+            <h3 class="exhibition-name">祝英台：古今文化攻略</h3>
+            <p class="exhibition-date">2023-12-01 ~ 2024-01-31</p>
+        </article>
+    </div>
+</section>
+
+<!-- 合作夥伴或大學標誌區 -->
+<section class="partners">
+    <h2>Learn from 350+ top universities and companies</h2>
+    <div class="logo-grid">
+        <div class="logo-item">
+            <img src="1.png" alt="Illinois Logo">
         </div>
-    </section>
-</main>
-<footer class="technologies">
-    <img src="/technologies.svg" alt="List of supported technologies">
+        <div class="logo-item">
+            <img src="2.png" alt="Duke Logo">
+        </div>
+        <div class="logo-item">
+            <img src="3.png" alt="Google Logo">
+        </div>
+        <div class="logo-item">
+            <img src="4.png" alt="UMich Logo">
+        </div>
+        <div class="logo-item">
+            <img src="5.png" alt="IBM Logo">
+        </div>
+        <div class="logo-item">
+            <img src="6.png" alt="Vanderbilt Logo">
+        </div>
+        <div class="logo-item">
+            <img src="7.png" alt="Johns Hopkins Logo">
+        </div>
+    </div>
+</section>
+
+<!-- 頁尾 -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 MySite. All rights reserved.</p>
+        <p>Built with HTML, CSS, and JavaScript</p>
+    </div>
 </footer>
-<script type="module" src="/src/main.js"></script>
+
+<!-- 載入外部 JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
