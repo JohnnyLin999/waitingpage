@@ -57,3 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Add event listener to the Coursera logo button
+    const logoButton = document.querySelector('.btn-logo');
+    if (logoButton) {
+        logoButton.addEventListener('click', () => {
+            window.location.href = 'https://www.coursera.org/';
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Add event listener to the "Log In" button
+    const loginButton = document.querySelector('.btn-login');
+    if (loginButton) {
+        loginButton.addEventListener('click', () => {
+            window.location.href = 'https://www.coursera.org/career-academy?authMode=login&trk_ref=globalnav';
+        });
+    }
+
+    // Add event listener to the "Join for Free" button
+    const joinButton = document.querySelector('.btn-primary');
+    if (joinButton) {
+        joinButton.addEventListener('click', () => {
+            window.location.href = 'https://www.coursera.org/career-academy?authMode=signup&trk_ref=globalnav';
+        });
+    }
+});

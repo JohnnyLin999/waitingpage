@@ -193,3 +193,10 @@ body {
     color: #666;
     font-size: 0.9rem;
 }
+
+.btn-logo {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
